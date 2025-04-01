@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OT+mBqhnwAs=",
+  "success": true,
+  "projectFilePath": "/Users/charlesb/Desktop/video files/SalesSummary 2/SalesSummary/SalesSummary.csproj",
+  "expectedPackageFiles": [
+    "/Users/charlesb/.nuget/packages/csvhelper/33.0.1/csvhelper.33.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}

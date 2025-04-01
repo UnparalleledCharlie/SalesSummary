@@ -1,0 +1,37 @@
+﻿@model List<SalesRecord>
+
+@{
+    ViewData["Title"] = "Sales Summary";
+}
+
+<h2>Sales Summary</h2>
+
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th>Segment</th>
+        <th>Country</th>
+        <th>Product</th>
+        <th>Discount Band</th>
+        <th>Unit Sold</th>
+        <th>Manufacturing Price</th>
+        <th>Sale Price</th>
+        <th>Region</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var sale in Model)
+    {
+        <tr>
+            <td>@sale.Segment</td>
+            <td>@sale.Country</td>
+            <td>@sale.Product</td>
+            <td>@sale.DiscountBand</td>
+            <td>@sale.UnitSold</td>
+            <td>@sale.ManufacturingPrice</td>
+            <td>@sale.SalePrice</td>
+            <td>@sale.Date.ToShortDateString()</td>
+        </tr>
+    }
+    </tbody>
+</table>
